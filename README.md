@@ -33,14 +33,18 @@ RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, A
 | [Manual Mode](python/manual_mode.py) | Python | Choose a specific model with auto-fallback |
 | [Web Search](python/web_search.py) | Python | Real-time data via automatic web search |
 | [URL Fetching](python/url_fetching.py) | Python | Analyze web pages automatically |
+| [Prompt Enhancement](python/prompt_enhancement.py) | Python | Auto-rewrite vague prompts for better results |
+| [Test Mode](python/test_mode.py) | Python | Force default-tier models for dev/CI |
 | [Speed Strategy](javascript/speed_strategy.js) | JavaScript | Real-time chatbot with minimal latency |
 | [Quality Strategy](javascript/quality_strategy.js) | JavaScript | Best output for complex tasks |
 | [Cost Strategy](javascript/cost_strategy.js) | JavaScript | Minimize expenses for high-volume |
 | [Web Search](javascript/web_search.js) | JavaScript | Trending topics via auto web search |
 | [OpenAI Compatible](javascript/openai_compatible.js) | JavaScript | OpenAI SDK drop-in replacement |
+| [Prompt Enhancement](javascript/prompt_enhancement.js) | JavaScript | Enhancement via OpenAI SDK headers |
 | [Balanced Strategy](typescript/balanced_strategy.ts) | TypeScript | General-purpose assistant (OpenAI SDK) |
 | [Speed Strategy](typescript/speed_strategy.ts) | TypeScript | Fastest response (OpenAI SDK) |
 | [Manual Mode](typescript/manual_mode.ts) | TypeScript | Specific model with auto-fallback |
+| [Test Mode](typescript/test_mode.ts) | TypeScript | Force default-tier models (OpenAI SDK) |
 | [Basic cURL](curl/basic.sh) | cURL | Simple request from the command line |
 
 ## Quick Start
@@ -92,6 +96,7 @@ chmod +x basic.sh
 | `POST /api/v1/chat` | Native RoutePlex chat endpoint |
 | `POST /v1/chat/completions` | OpenAI-compatible endpoint |
 | `POST /api/v1/chat/estimate` | Free cost estimation (no charge) |
+| `POST /api/v1/chat/enhance` | Standalone prompt enhancement (no API key) |
 | `GET /api/v1/models` | List available models |
 
 Base URL: `https://api.routeplex.com`
