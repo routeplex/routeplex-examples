@@ -29,7 +29,6 @@ def search_and_answer(question: str) -> str:
         json={
             "messages": [{"role": "user", "content": question}],
             "mode": "routeplex-ai",
-            "strategy": "balanced",
         },
     )
 

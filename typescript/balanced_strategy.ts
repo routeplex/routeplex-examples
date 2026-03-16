@@ -1,8 +1,13 @@
 /**
- * Balanced Strategy — General-Purpose Assistant (OpenAI SDK)
+ * Balanced Strategy — Fixed-Weight Override (OpenAI SDK)
  *
  * Uses the OpenAI TypeScript SDK with RoutePlex as a drop-in replacement.
- * Balanced strategy optimizes the trade-off between cost, speed, and quality.
+ * The "balanced" strategy is a fixed-weight override that optimizes the
+ * trade-off between cost, speed, and quality using static weights.
+ *
+ * By default (when no strategy is specified), RoutePlex uses auto-routing
+ * which analyzes the prompt to dynamically choose the best model. Use
+ * "balanced" only when you want deterministic fixed-weight routing.
  *
  * Docs: https://routeplex.com/docs/openai-compatibility
  * Usage: npx tsx balanced_strategy.ts
@@ -28,7 +33,7 @@ interface Message {
 }
 
 async function chat(messages: Message[]): Promise<string | null> {
-  // Strategy is passed via the X-RoutePlex-Strategy header
+  // Explicit "balanced" override via the X-RoutePlex-Strategy header
   const response = await client.chat.completions.create(
     {
       model: "routeplex-ai",

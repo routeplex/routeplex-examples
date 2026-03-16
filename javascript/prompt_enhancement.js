@@ -44,7 +44,6 @@ async function main() {
   if (response.x_routeplex?.enhancement) {
     const enh = response.x_routeplex.enhancement;
     console.log(`\nEnhancement applied: ${enh.applied}`);
-    console.log(`Query type: ${enh.query_type}`);
   }
 
   // ── Standalone enhance endpoint (no API key required) ──────────────────
@@ -58,7 +57,6 @@ async function main() {
   const enhanceData = await enhanceResp.json();
   console.log(`Original: ${enhanceData.data.original_prompt}`);
   console.log(`Enhanced: ${enhanceData.data.enhanced_prompt}`);
-  console.log(`Type:     ${enhanceData.data.query_type}`);
 }
 
 main();

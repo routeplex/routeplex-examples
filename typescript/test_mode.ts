@@ -34,7 +34,6 @@ async function main() {
     },
     {
       headers: {
-        "X-RoutePlex-Strategy": "balanced",
         "X-RoutePlex-Test-Mode": "true",
       },
     }

@@ -33,7 +33,6 @@ def main():
         json={
             "messages": [{"role": "user", "content": "Hello! Just testing."}],
             "mode": "routeplex-ai",
-            "strategy": "balanced",
             "test_mode": True,
         },
     )

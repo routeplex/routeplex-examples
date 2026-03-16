@@ -45,7 +45,6 @@ def main():
     # Enhancement metadata tells you what happened
     enhancement = data["data"].get("enhancement", {})
     print(f"\nEnhancement applied: {enhancement.get('applied')}")
-    print(f"Query type detected: {enhancement.get('query_type')}")
     print(f"Original prompt: {enhancement.get('original_prompt')}")
 
     # ── Standalone enhance endpoint (no API key required) ────────────────────
@@ -59,7 +58,6 @@ def main():
     enhance_data = enhance_resp.json()
     print(f"Original:  {enhance_data['data']['original_prompt']}")
     print(f"Enhanced:  {enhance_data['data']['enhanced_prompt']}")
-    print(f"Type:      {enhance_data['data']['query_type']}")
     print(f"Changed:   {enhance_data['data']['changed']}")
 
 

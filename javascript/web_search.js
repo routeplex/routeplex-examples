@@ -26,7 +26,6 @@ async function searchAndAnswer(question) {
     body: JSON.stringify({
       messages: [{ role: "user", content: question }],
       mode: "routeplex-ai",
-      strategy: "balanced",
     }),
   });
 

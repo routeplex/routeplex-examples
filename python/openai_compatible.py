@@ -24,15 +24,14 @@ client = OpenAI(
 
 
 def main():
-    # Auto-routing with balanced strategy
-    # Strategy is passed via the X-RoutePlex-Strategy header
+    # Auto-routing — no strategy header needed, RoutePlex analyzes the prompt
+    # to pick the best model automatically.
     response = client.chat.completions.create(
         model="routeplex-ai",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "What are three tips for writing clean code?"},
         ],
-        extra_headers={"X-RoutePlex-Strategy": "balanced"},
     )
 
     print("Response:", response.choices[0].message.content)

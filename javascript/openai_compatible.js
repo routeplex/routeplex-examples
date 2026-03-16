@@ -23,19 +23,15 @@ const client = new OpenAI({
 });
 
 async function main() {
-  // Strategy is passed via the X-RoutePlex-Strategy header
-  const response = await client.chat.completions.create(
-    {
-      model: "routeplex-ai",
-      messages: [
-        { role: "system", content: "You are a helpful assistant." },
-        { role: "user", content: "What are three tips for writing clean code?" },
-      ],
-    },
-    {
-      headers: { "X-RoutePlex-Strategy": "balanced" },
-    }
-  );
+  // Auto-routing — no strategy header needed, RoutePlex analyzes the prompt
+  // to pick the best model automatically.
+  const response = await client.chat.completions.create({
+    model: "routeplex-ai",
+    messages: [
+      { role: "system", content: "You are a helpful assistant." },
+      { role: "user", content: "What are three tips for writing clean code?" },
+    ],
+  });
 
   console.log("Response:", response.choices[0].message.content);
   console.log(`Model: ${response.model}`);

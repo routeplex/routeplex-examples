@@ -20,7 +20,7 @@ export ROUTEPLEX_API_KEY="your-api-key-here"
 | `cost_strategy.py` | Minimize expenses |
 | `speed_strategy.py` | Minimize latency |
 | `quality_strategy.py` | Best output quality |
-| `balanced_strategy.py` | Optimal trade-off (default) |
+| `balanced_strategy.py` | Fixed-weight cost/speed/quality override |
 | `manual_mode.py` | Specific model with fallback |
 | `web_search.py` | Real-time data via web search |
 | `url_fetching.py` | Analyze web page content |

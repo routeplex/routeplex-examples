@@ -29,7 +29,7 @@ RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, A
 | [Cost Strategy](python/cost_strategy.py) | Python | Minimize expenses for high-volume tasks |
 | [Speed Strategy](python/speed_strategy.py) | Python | Minimize latency for real-time apps |
 | [Quality Strategy](python/quality_strategy.py) | Python | Best output for complex reasoning |
-| [Balanced Strategy](python/balanced_strategy.py) | Python | Optimal cost/speed/quality trade-off |
+| [Balanced Strategy](python/balanced_strategy.py) | Python | Fixed-weight cost/speed/quality override |
 | [Manual Mode](python/manual_mode.py) | Python | Choose a specific model with auto-fallback |
 | [Web Search](python/web_search.py) | Python | Real-time data via automatic web search |
 | [URL Fetching](python/url_fetching.py) | Python | Analyze web pages automatically |
@@ -41,7 +41,7 @@ RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, A
 | [Web Search](javascript/web_search.js) | JavaScript | Trending topics via auto web search |
 | [OpenAI Compatible](javascript/openai_compatible.js) | JavaScript | OpenAI SDK drop-in replacement |
 | [Prompt Enhancement](javascript/prompt_enhancement.js) | JavaScript | Enhancement via OpenAI SDK headers |
-| [Balanced Strategy](typescript/balanced_strategy.ts) | TypeScript | General-purpose assistant (OpenAI SDK) |
+| [Balanced Strategy](typescript/balanced_strategy.ts) | TypeScript | Fixed-weight override (OpenAI SDK) |
 | [Speed Strategy](typescript/speed_strategy.ts) | TypeScript | Fastest response (OpenAI SDK) |
 | [Manual Mode](typescript/manual_mode.ts) | TypeScript | Specific model with auto-fallback |
 | [Test Mode](typescript/test_mode.ts) | TypeScript | Force default-tier models (OpenAI SDK) |
@@ -79,7 +79,7 @@ node speed_strategy.js
 ```bash
 cd typescript
 npm install
-npx tsx balanced_strategy.ts
+npx tsx speed_strategy.ts
 ```
 
 **cURL:**
@@ -103,12 +103,15 @@ Base URL: `https://api.routeplex.com`
 
 ## Routing Strategies
 
+By default, when no strategy is specified, RoutePlex uses **auto-routing** — it analyzes the prompt to dynamically choose the best model. You can override this with an explicit strategy:
+
 | Strategy | Best For | Description |
 |----------|----------|-------------|
+| *(none)* | General-purpose (default) | Auto-routes based on prompt analysis |
 | `cost` | High-volume, simple tasks | Routes to most cost-effective model |
 | `speed` | Real-time, interactive apps | Routes to fastest responding model |
 | `quality` | Complex reasoning, analysis | Routes to most capable model |
-| `balanced` | General-purpose (default) | Optimizes cost/speed/quality trade-off |
+| `balanced` | Fixed-weight override | Static cost/speed/quality trade-off (not prompt-aware) |
 
 ## Links
 

@@ -1,8 +1,12 @@
 """
-Balanced Strategy
-=================
-Default strategy for general-purpose applications. Optimizes the trade-off
-between cost, speed, and quality automatically.
+Balanced Strategy (Explicit Override)
+=====================================
+The "balanced" strategy is a fixed-weight override that optimizes the trade-off
+between cost, speed, and quality using static weights.
+
+By default (when no strategy is specified), RoutePlex uses auto-routing which
+analyzes the prompt to dynamically choose the best model. Use "balanced" only
+when you want deterministic fixed-weight routing instead of prompt-based analysis.
 
 Docs: https://routeplex.com/docs/routing-modes
 Usage: python balanced_strategy.py
@@ -20,7 +24,7 @@ if not API_KEY:
 
 
 def ask(question: str) -> str:
-    """General-purpose question answering with balanced routing."""
+    """General-purpose question answering with fixed balanced routing."""
     response = requests.post(
         f"{BASE_URL}/api/v1/chat",
         headers={"Authorization": f"Bearer {API_KEY}"},

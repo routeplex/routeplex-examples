@@ -22,6 +22,5 @@ curl -s https://api.routeplex.com/api/v1/chat \
   -H "Content-Type: application/json" \
   -d '{
     "messages": [{"role": "user", "content": "Hello! What can you help me with?"}],
-    "mode": "routeplex-ai",
-    "strategy": "balanced"
+    "mode": "routeplex-ai"
   }' | python3 -m json.tool  # or pipe to: jq .

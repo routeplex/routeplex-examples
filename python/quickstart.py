@@ -26,7 +26,7 @@ def main():
         json={
             "messages": [{"role": "user", "content": "Hello! What can you help me with?"}],
             "mode": "routeplex-ai",
-            "strategy": "balanced",
+            # No strategy needed — RoutePlex auto-routes based on prompt analysis
         },
     )
 
