@@ -16,7 +16,7 @@
 
 ## Overview
 
-RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including smart routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
+RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including prompt-based auto-routing, strategy routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
 
 ## SDK Examples (Recommended)
 
@@ -32,7 +32,7 @@ npm install @routeplex/node    # Node.js
 | Example | Description |
 |---------|-------------|
 | [Quickstart](python-sdk/quickstart.py) | One-liner chat — your first SDK call |
-| [Strategies](python-sdk/strategies.py) | Cost, speed, quality, and balanced routing |
+| [Strategies](python-sdk/strategies.py) | Auto-routing + cost, speed, quality, balanced strategies |
 | [Manual Mode](python-sdk/manual_mode.py) | Pick a specific model |
 | [Multi-turn](python-sdk/multi_turn.py) | Conversation with message history |
 | [Error Handling](python-sdk/error_handling.py) | Typed exceptions for every error case |
@@ -43,7 +43,7 @@ npm install @routeplex/node    # Node.js
 | Example | Description |
 |---------|-------------|
 | [Quickstart](node-sdk/quickstart.mjs) | One-liner chat — your first SDK call |
-| [Strategies](node-sdk/strategies.mjs) | Cost, speed, quality, and balanced routing |
+| [Strategies](node-sdk/strategies.mjs) | Auto-routing + cost, speed, quality, balanced strategies |
 | [Manual Mode](node-sdk/manual_mode.mjs) | Pick a specific model |
 | [Multi-turn](node-sdk/multi_turn.mjs) | Conversation with message history |
 | [Error Handling](node-sdk/error_handling.mjs) | Typed exceptions for every error case |
