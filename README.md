@@ -18,7 +18,39 @@
 
 RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including smart routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
 
-## Examples
+## SDK Examples (Recommended)
+
+The easiest way to use RoutePlex is through the official SDKs:
+
+```bash
+pip install routeplex          # Python
+npm install @routeplex/node    # Node.js
+```
+
+### Python SDK
+
+| Example | Description |
+|---------|-------------|
+| [Quickstart](python-sdk/quickstart.py) | One-liner chat — your first SDK call |
+| [Strategies](python-sdk/strategies.py) | Cost, speed, quality, and balanced routing |
+| [Manual Mode](python-sdk/manual_mode.py) | Pick a specific model |
+| [Multi-turn](python-sdk/multi_turn.py) | Conversation with message history |
+| [Error Handling](python-sdk/error_handling.py) | Typed exceptions for every error case |
+| [Free Endpoints](python-sdk/free_endpoints.py) | Cost estimation, prompt enhancement, list models |
+
+### Node.js SDK
+
+| Example | Description |
+|---------|-------------|
+| [Quickstart](node-sdk/quickstart.mjs) | One-liner chat — your first SDK call |
+| [Strategies](node-sdk/strategies.mjs) | Cost, speed, quality, and balanced routing |
+| [Manual Mode](node-sdk/manual_mode.mjs) | Pick a specific model |
+| [Multi-turn](node-sdk/multi_turn.mjs) | Conversation with message history |
+| [Error Handling](node-sdk/error_handling.mjs) | Typed exceptions for every error case |
+
+---
+
+## Raw API Examples (without SDK)
 
 | Example | Language | Description |
 |---------|----------|-------------|
