@@ -1,6 +1,6 @@
 # RoutePlex Python Examples
 
-Working Python examples for the [RoutePlex](https://routeplex.com) API.
+Working Python examples for the [RoutePlex](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples) API.
 
 ## Setup
 

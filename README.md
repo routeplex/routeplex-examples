@@ -2,13 +2,13 @@
 
 # RoutePlex Examples
 
-**Working code examples for the [RoutePlex](https://routeplex.com) unified AI gateway.**
+**Working code examples for the [RoutePlex](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples) unified AI gateway.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![RoutePlex](https://img.shields.io/badge/RoutePlex-API-6366f1)](https://routeplex.com)
-[![Docs](https://img.shields.io/badge/Docs-routeplex.com-green)](https://routeplex.com/docs)
+[![RoutePlex](https://img.shields.io/badge/RoutePlex-API-6366f1)](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples)
+[![Docs](https://img.shields.io/badge/Docs-routeplex.com-green)](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples)
 
-[Get API Key](https://routeplex.com/app) · [Documentation](https://routeplex.com/docs) · [API Reference](https://routeplex.com/api-reference)
+[Get API Key](https://routeplex.com/app?utm_source=github&utm_medium=readme&utm_campaign=examples) · [Documentation](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples) · [API Reference](https://routeplex.com/api-reference?utm_source=github&utm_medium=readme&utm_campaign=examples)
 
 </div>
 
@@ -83,7 +83,7 @@ npm install @routeplex/node    # Node.js
 
 ### 1. Get an API Key
 
-Sign up at [routeplex.com/app](https://routeplex.com/app) and create an API key.
+Sign up at [routeplex.com/app](https://routeplex.com/app?utm_source=github&utm_medium=readme&utm_campaign=examples) and create an API key.
 
 ### 2. Set Your Key
 
@@ -147,10 +147,10 @@ By default, when no strategy is specified, RoutePlex uses **auto-routing** — i
 
 ## Links
 
-- [Documentation](https://routeplex.com/docs)
-- [API Reference](https://routeplex.com/api-reference)
-- [Models](https://routeplex.com/models)
-- [Pricing](https://routeplex.com/pricing)
+- [Documentation](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [API Reference](https://routeplex.com/api-reference?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [Models](https://routeplex.com/models?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [Pricing](https://routeplex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=examples)
 - [Discord](https://discord.gg/BaFcXQJA)
 
 ## License

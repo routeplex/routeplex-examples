@@ -1,6 +1,6 @@
 # RoutePlex JavaScript Examples
 
-Working JavaScript examples for the [RoutePlex](https://routeplex.com) API.
+Working JavaScript examples for the [RoutePlex](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples) API.
 
 ## Setup
 

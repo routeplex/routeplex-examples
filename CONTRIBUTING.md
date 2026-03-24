@@ -30,6 +30,6 @@ Thank you for your interest in contributing! Here's how you can help.
 
 ## Questions?
 
-- [Documentation](https://routeplex.com/docs)
+- [Documentation](https://routeplex.com/docs?utm_source=github&utm_medium=contributing&utm_campaign=examples)
 - [Discord](https://discord.gg/BaFcXQJA)
 - [Email](mailto:support@routeplex.com)
