@@ -2,13 +2,13 @@
 
 # RoutePlex Examples
 
-**Working code examples for the [RoutePlex](https://routeplex.com) unified AI gateway.**
+**Working code examples for the [RoutePlex](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples) unified AI gateway.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![RoutePlex](https://img.shields.io/badge/RoutePlex-API-6366f1)](https://routeplex.com)
-[![Docs](https://img.shields.io/badge/Docs-routeplex.com-green)](https://routeplex.com/docs)
+[![RoutePlex](https://img.shields.io/badge/RoutePlex-API-6366f1)](https://routeplex.com?utm_source=github&utm_medium=readme&utm_campaign=examples)
+[![Docs](https://img.shields.io/badge/Docs-routeplex.com-green)](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples)
 
-[Get API Key](https://routeplex.com/app) · [Documentation](https://routeplex.com/docs) · [API Reference](https://routeplex.com/api-reference)
+[Get API Key](https://routeplex.com/app?utm_source=github&utm_medium=readme&utm_campaign=examples) · [Documentation](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples) · [API Reference](https://routeplex.com/api-reference?utm_source=github&utm_medium=readme&utm_campaign=examples)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 ## Overview
 
-RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including smart routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
+RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including prompt-based auto-routing, strategy routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
 
 ## SDK Examples (Recommended)
 
@@ -32,7 +32,7 @@ npm install @routeplex/node    # Node.js
 | Example | Description |
 |---------|-------------|
 | [Quickstart](python-sdk/quickstart.py) | One-liner chat — your first SDK call |
-| [Strategies](python-sdk/strategies.py) | Cost, speed, quality, and balanced routing |
+| [Strategies](python-sdk/strategies.py) | Auto-routing + cost, speed, quality, balanced strategies |
 | [Manual Mode](python-sdk/manual_mode.py) | Pick a specific model |
 | [Multi-turn](python-sdk/multi_turn.py) | Conversation with message history |
 | [Error Handling](python-sdk/error_handling.py) | Typed exceptions for every error case |
@@ -43,7 +43,7 @@ npm install @routeplex/node    # Node.js
 | Example | Description |
 |---------|-------------|
 | [Quickstart](node-sdk/quickstart.mjs) | One-liner chat — your first SDK call |
-| [Strategies](node-sdk/strategies.mjs) | Cost, speed, quality, and balanced routing |
+| [Strategies](node-sdk/strategies.mjs) | Auto-routing + cost, speed, quality, balanced strategies |
 | [Manual Mode](node-sdk/manual_mode.mjs) | Pick a specific model |
 | [Multi-turn](node-sdk/multi_turn.mjs) | Conversation with message history |
 | [Error Handling](node-sdk/error_handling.mjs) | Typed exceptions for every error case |
@@ -83,7 +83,7 @@ npm install @routeplex/node    # Node.js
 
 ### 1. Get an API Key
 
-Sign up at [routeplex.com/app](https://routeplex.com/app) and create an API key.
+Sign up at [routeplex.com/app](https://routeplex.com/app?utm_source=github&utm_medium=readme&utm_campaign=examples) and create an API key.
 
 ### 2. Set Your Key
 
@@ -147,10 +147,10 @@ By default, when no strategy is specified, RoutePlex uses **auto-routing** — i
 
 ## Links
 
-- [Documentation](https://routeplex.com/docs)
-- [API Reference](https://routeplex.com/api-reference)
-- [Models](https://routeplex.com/models)
-- [Pricing](https://routeplex.com/pricing)
+- [Documentation](https://routeplex.com/docs?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [API Reference](https://routeplex.com/api-reference?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [Models](https://routeplex.com/models?utm_source=github&utm_medium=readme&utm_campaign=examples)
+- [Pricing](https://routeplex.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=examples)
 - [Discord](https://discord.gg/BaFcXQJA)
 
 ## License
