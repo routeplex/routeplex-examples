@@ -16,7 +16,7 @@
 
 ## Overview
 
-RoutePlex is a unified AI gateway that lets you access 22+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including prompt-based auto-routing, strategy routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
+RoutePlex is a unified AI gateway that lets you access 30+ models from OpenAI, Anthropic, and Google through a single API. These examples demonstrate real-world usage patterns including prompt-based auto-routing, strategy routing, failover, web search, URL fetching, and OpenAI SDK compatibility.
 
 ## SDK Examples (Recommended)
 
@@ -37,6 +37,7 @@ npm install @routeplex/node    # Node.js
 | [Multi-turn](python-sdk/multi_turn.py) | Conversation with message history |
 | [Error Handling](python-sdk/error_handling.py) | Typed exceptions for every error case |
 | [Free Endpoints](python-sdk/free_endpoints.py) | Cost estimation, prompt enhancement, list models |
+| [Streaming](python-sdk/streaming.py) | Stream responses in real time (buffered & realtime modes) |
 
 ### Node.js SDK
 
@@ -47,6 +48,8 @@ npm install @routeplex/node    # Node.js
 | [Manual Mode](node-sdk/manual_mode.mjs) | Pick a specific model |
 | [Multi-turn](node-sdk/multi_turn.mjs) | Conversation with message history |
 | [Error Handling](node-sdk/error_handling.mjs) | Typed exceptions for every error case |
+| [Free Endpoints](node-sdk/free_endpoints.mjs) | Cost estimation, prompt enhancement, list models |
+| [Streaming](node-sdk/streaming.mjs) | Stream responses in real time (buffered & realtime modes) |
 
 ---
 
@@ -67,17 +70,23 @@ npm install @routeplex/node    # Node.js
 | [URL Fetching](python/url_fetching.py) | Python | Analyze web pages automatically |
 | [Prompt Enhancement](python/prompt_enhancement.py) | Python | Auto-rewrite vague prompts for better results |
 | [Test Mode](python/test_mode.py) | Python | Force default-tier models for dev/CI |
+| [Streaming](python/streaming.py) | Python | Real-time SSE streaming (native API) |
+| [Streaming OpenAI SDK](python/streaming_openai_sdk.py) | Python | Streaming via the OpenAI SDK |
 | [Speed Strategy](javascript/speed_strategy.js) | JavaScript | Real-time chatbot with minimal latency |
 | [Quality Strategy](javascript/quality_strategy.js) | JavaScript | Best output for complex tasks |
 | [Cost Strategy](javascript/cost_strategy.js) | JavaScript | Minimize expenses for high-volume |
 | [Web Search](javascript/web_search.js) | JavaScript | Trending topics via auto web search |
 | [OpenAI Compatible](javascript/openai_compatible.js) | JavaScript | OpenAI SDK drop-in replacement |
 | [Prompt Enhancement](javascript/prompt_enhancement.js) | JavaScript | Enhancement via OpenAI SDK headers |
+| [Streaming](javascript/streaming.js) | JavaScript | Real-time SSE streaming (native API) |
+| [Streaming OpenAI SDK](javascript/streaming_openai_sdk.js) | JavaScript | Streaming via the OpenAI SDK |
 | [Balanced Strategy](typescript/balanced_strategy.ts) | TypeScript | Fixed-weight override (OpenAI SDK) |
 | [Speed Strategy](typescript/speed_strategy.ts) | TypeScript | Fastest response (OpenAI SDK) |
 | [Manual Mode](typescript/manual_mode.ts) | TypeScript | Specific model with auto-fallback |
 | [Test Mode](typescript/test_mode.ts) | TypeScript | Force default-tier models (OpenAI SDK) |
+| [Streaming](typescript/streaming.ts) | TypeScript | Real-time SSE streaming (OpenAI SDK) |
 | [Basic cURL](curl/basic.sh) | cURL | Simple request from the command line |
+| [Streaming cURL](curl/streaming.sh) | cURL | Stream responses via SSE |
 
 ## Quick Start
 
